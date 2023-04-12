@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CF Moto</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+    /* ----------------------------------------------Navigation Bar---------------------------------------------- */
+.nav{
+    display: flex;
+    background:#97c1cd;
+    height: 80px;
+
+}
+.logo{
+    margin: 10px 34px;
+    height: 10px;
+    
+   
+}
+.logo img{
+    height: 50px;
+    margin: 3px 5px;
+    border-radius: 50%;
+
+    
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50em;
+    margin-top: 17px;
+    
+
+}
+.navbar li{
+    display: inline-block;
+    list-style: none;
+    margin: 1rem;
+    
+}
+.navbar li a{
+   font-size: 18px;
+   text-transform: uppercase;
+   padding: 0,30px;
+   color:black;
+   text-decoration: none;
+   justify-content: space-between;
+   
+}
+li a:hover{
+    transform:scale(2);
+    color: yellow;
+}
+/* ---------------------------------------bikes------------------------------------------- */
+.container h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    
+}
+
+#bike{
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bike .box{
+    border-radius: 30px;
+    padding: 95px;
+    
+    width: 189px;
+    justify-content: space-evenly;
+    
+    
+}
+#bike .box img{
+    height: 140px;
+    margin:auto;
+    display: block;
+    margin-bottom: 30px;
+}
+.box img:hover{
+    transform: scale(1.3);
+}
+.container button{
+    border-radius: 3px;
+    margin-left: 30em;
+    font-size: 1.5em;
+    background-color: black;
+    color: white;
+    margin-top: -9px;
+}
+.box h2{
+    color: red;
+    cursor: pointer;
+}
+
+</style>
+<body>
+        <!-- -----------------------Navigation Bar----------------------------------------------------- -->
+        <div class="nav">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="logo" srcset="">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="bike.html">Home</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="index.html">Servicing</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+    
+            </div>
+        </div>
+        <!----------------------Honda------------------------------------------------- -->
+        <section class="container">
+            <h1>CF Moto</h1>
+            <div id="bike">
+                <div class="box">
+                    <a href=""><img src="images/cfmoto/300sr.jpg" alt="" srcset=""></a>
+                    <h2>CF 300SR</h2>
+                    <h4></h4>
+                </div>
+                <div class="box">
+                    <a href=""><img src="images/cfmoto/nk150.jpg" alt="" srcset=""></a>
+                    <h2>NK 150</h2>
+                    <h4></h4>
+                </div>
+                <div class="box">
+                    <a href=""><img src="images/cfmoto/nk200.jpg" alt="" srcset=""></a>
+                    <h2>NK 200</h2>
+                    <h4></h4>
+                </div>
+                <div class="box">
+                    <a href=""><img src="images/cfmoto/nk400.jpg" alt="" srcset=""></a>
+                    <h2>NK 400</h2>
+                    <h4></h4>
+                </div>
+                <div class="box">
+                    <a href=""><img src="images/cfmoto/nk250.jpg" alt="" srcset=""></a>
+                    <h2>NK 250</h2>
+                    <h4></h4>
+                </div>
+                
+            </div>
+        </section>
+</body>
+</html>
+       
