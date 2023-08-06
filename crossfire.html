@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="header.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrossFire</title>
 </head>
@@ -12,59 +13,7 @@
     margin: 0;
 }
     /* ----------------------------------------------Navigation Bar---------------------------------------------- */
-.nav{
-    display: flex;
-    background:#97c1cd;
-    height: 80px;
 
-}
-.logo{
-    margin: 10px 34px;
-    height: 10px;
-    
-   
-}
-.logo img{
-    height: 50px;
-    margin: 3px 5px;
-    border-radius: 50%;
-
-    
-}
-.navbar ul{
-    display: flex;
-    flex-direction: row;
-    margin-left: 50em;
-    margin-top: 17px;
-    
-
-}
-.navbar li{
-    display: inline-block;
-    list-style: none;
-    margin: 1rem;
-    
-}
-.navbar li a{
-   font-size: 18px;
-   text-transform: uppercase;
-   padding: 0,30px;
-   color:black;
-   text-decoration: none;
-   justify-content: space-between;
-   
-}
-li a:hover{
-    transform:scale(2);
-    color: yellow;
-}
-/* ---------------------------------------bikes------------------------------------------- */
-.container h1{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-top: 10px;
-    
-}
 
 #bike{
     margin-top: 8px;
@@ -102,25 +51,36 @@ li a:hover{
     color: red;
     cursor: pointer;
 }
+.container h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: -2em;
+    
+}
 
 </style>
 <body>
-        <!-- -----------------------Navigation Bar----------------------------------------------------- -->
-        <div class="nav">
-            <div class="logo">
-                <img src="images/logo.jpg" alt="logo" srcset="">
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li><a href="bike.html">Home</a></li>
-                    <li><a href="brands.html">Brands</a></li>
-                    <li><a href="index.html">Servicing</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="contactUs.html">Contact Us</a></li>
+    <div class="logo" style="margin-bottom: -10em;">
+        <img src="images/logo (2).png" style="width: 7em;height:7em;">
+    </div>
+    <!-------------------------------------------------Nav Bar------------------------------------------------>
+    <nav>
+        <ul class="menu nav-menu">
+            <li><a href="bike.html">Home</a></li>
+            <li>
+                <a href="brands.html">Brands</a>
+                <ul class="menu-item">
+                    <li><a href="yamaha.html">Yamaha</a></li>
+                    <li><a href="honda.html">Honda</a></li>
+                    <li><a href="beneli.html">Beneli</a></li>
+                    <li><a href="ducati.html">Ducati</a></li>
                 </ul>
-    
-            </div>
-        </div>
+            </li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="contactUs.html">contact us</a></li>
+        </ul>
+    </nav>
         <!----------------------crossfire------------------------------------------------- -->
         <section class="container">
             <h1>CrossFire</h1>
@@ -143,6 +103,55 @@ li a:hover{
                 
             </div>
         </section>
+        <!-- Footer--------------------------------------------------- -->
+      <footer>
+        <div class="contenttt">
+          <div class="top">
+            <div class="logo-details">
+              <img src="images/logo (2).png" alt="" srcset="" style="width: 5em;height: 5em;">
+              <!-- <span class="logo_name">Bhatbhatey Kinum</span> -->
+            </div>
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="link-boxes">
+            <ul class="boxes">
+              <li class="link_name">Company</li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+            <ul class="boxes">
+              <li class="link_name">Services</li>
+              <li><a href="#">Bike Resale</a></li>
+              <li><a href="#">Recondition</a></li>
+              <li><a href="#">Service Center</a></li>
+              <li><a href="#">Bike modify</a></li>
+            </ul>
+            <img src="images/motorcycle.gif" style="width:20em; height:12em;margin-top:-3em;">
+            <ul class="box input-box">
+              <li class="link_name">Subscribe</li>
+              <li><input type="text" placeholder="Enter your email"></li>
+              <li><input type="button" value="Subscribe"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2021 <a href="#">Bhatbhatey Kinum.</a>All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">| Terms & condition</a>
+            </span>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
        
